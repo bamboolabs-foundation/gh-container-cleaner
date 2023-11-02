@@ -1,0 +1,21 @@
+[package]
+name = "gh-container-cleaner"
+version = "0.1.0"
+edition = "2021"
+authors = ["Aditya Kresna <aditya.kresna@outlook.co.id>"]
+license = "MIT"
+repository = "https://github.com/bamboolabs-foundation/gh-container-cleaner"
+description = "Github dangling container cleaner"
+
+[dependencies]
+anyhow = "1.0.75"
+reqwest = { version = "0.11.22", default-features = false, features = [
+    "json",
+    "native-tls",
+    "tokio-native-tls",
+] }
+serde = { version = "1.0.190", features = ["derive"] }
+serde_json = { version = "1.0.108", features = ["preserve_order"] }
+structopt = { version = "0.3.26", features = ["color"] }
+tokio = { version = "1.33.0", features = ["full"] }
+zsn-logging = { git = "https://github.com/bamboolabs-foundation/zsn-common-lib", version = "0.1.2", features = ["main", "std"] }
