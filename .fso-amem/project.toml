@@ -1,0 +1,6 @@
+[project]
+name = "bamboo-gh-container-cleaner"
+slug = "bamboo-gh-container-cleaner"
+
+[amem]
+server = "https://amem.flusci.org"
